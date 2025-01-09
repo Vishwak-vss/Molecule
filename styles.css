@@ -44,18 +44,26 @@ select, button {
     border: 1px solid #444;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
+    outline: none;
+    font-size: 14px;
 }
 
-select {
-    flex-grow: 1;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-button:hover {
+select:hover, button:hover {
     background: #444;
+    border-color: #555;
 }
+select, button::view-transition{
+    background: #444;
+    border-color: #555; 
+    transition: 0.3s ease;
+    outline: none;
+    font-size: 14px;
+}
+select:focus, button:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
 
 .content {
     display: grid;

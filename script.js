@@ -109,8 +109,142 @@ const MOLECULES = {
                         'Nonpolar molecule'
                     ]
                 }
-            }
-        };
+            },
+                phosphine: {
+                    atoms: [
+                        { element: 'P', position: [0, 0, 0], color: 0xffa500 },
+                        { element: 'H', position: [0.8, 0.6, 0], color: 0xffffff },
+                        { element: 'H', position: [-0.4, 0.6, 0.7], color: 0xffffff },
+                        { element: 'H', position: [-0.4, 0.6, -0.7], color: 0xffffff }
+                    ],
+                    bonds: [[0, 1], [0, 2], [0, 3]],
+                    info: {
+                        formula: 'PH₃',
+                        structure: 'Pyramidal',
+                        angles: '93.5°',
+                        properties: [
+                            'Toxic gas',
+                            'Used in semiconductor industry',
+                            'Chemical precursor',
+                            'Weak base',
+                            'Polar molecule'
+                        ]
+                    }
+                },
+                hydrogenCyanide: {
+                    atoms: [
+                        { element: 'H', position: [0, 0, 0], color: 0xffffff },
+                        { element: 'C', position: [1.1, 0, 0], color: 0x808080 },
+                        { element: 'N', position: [2.2, 0, 0], color: 0x0000ff }
+                    ],
+                    bonds: [[0, 1], [1, 2]],
+                    info: {
+                        formula: 'HCN',
+                        structure: 'Linear',
+                        angles: '180°',
+                        properties: [
+                            'Highly toxic',
+                            'Industrial chemical',
+                            'Present in some plants',
+                            'Polar molecule',
+                            'Strong acid in water'
+                        ]
+                    }
+                },
+                formaldehyde: {
+                    atoms: [
+                        { element: 'C', position: [0, 0, 0], color: 0x808080 },
+                        { element: 'O', position: [1.2, 0, 0], color: 0xff0000 },
+                        { element: 'H', position: [-0.5, 0.7, 0], color: 0xffffff },
+                        { element: 'H', position: [-0.5, -0.7, 0], color: 0xffffff }
+                    ],
+                    bonds: [[0, 1], [0, 2], [0, 3]],
+                    info: {
+                        formula: 'CH₂O',
+                        structure: 'Trigonal planar',
+                        angles: '120°',
+                        properties: [
+                            'Preservative',
+                            'Industrial chemical',
+                            'Polar molecule',
+                            'Pungent odor',
+                            'Used in manufacturing'
+                        ]
+                    }
+                },
+                nitricOxide: {
+                    atoms: [
+                        { element: 'N', position: [0, 0, 0], color: 0x0000ff },
+                        { element: 'O', position: [1.15, 0, 0], color: 0xff0000 }
+                    ],
+                    bonds: [[0, 1]],
+                    info: {
+                        formula: 'NO',
+                        structure: 'Linear',
+                        angles: '180°',
+                        properties: [
+                            'Signaling molecule',
+                            'Air pollutant',
+                            'Vasodilator',
+                            'Free radical',
+                            'Reactive gas'
+                        ]
+                    }
+                },
+                aceticAcid: {
+                    atoms: [
+                        { element: 'C', position: [0, 0, 0], color: 0x808080 },
+                        { element: 'C', position: [1.54, 0, 0], color: 0x808080 },
+                        { element: 'O', position: [2.4, 0.8, 0], color: 0xff0000 },
+                        { element: 'O', position: [2.4, -0.8, 0], color: 0xff0000 },
+                        { element: 'H', position: [-0.4, 0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [-0.4, -0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [-0.4, 0, 0.9], color: 0xffffff },
+                        { element: 'H', position: [2.8, 1.5, 0], color: 0xffffff }
+                    ],
+                    bonds: [[0, 1], [1, 2], [1, 3], [0, 4], [0, 5], [0, 6], [2, 7]],
+                    info: {
+                        formula: 'CH₃COOH',
+                        structure: 'Tetrahedral with planar carboxyl',
+                        angles: '120° (O-C-O)',
+                        properties: [
+                            'Common vinegar component',
+                            'Organic acid',
+                            'Industrial chemical',
+                            'Preservative',
+                            'Polar molecule'
+                        ]
+                    }
+                },
+                propane: {
+                    atoms: [
+                        { element: 'C', position: [0, 0, 0], color: 0x808080 },
+                        { element: 'C', position: [1.54, 0, 0], color: 0x808080 },
+                        { element: 'C', position: [-1.54, 0, 0], color: 0x808080 },
+                        { element: 'H', position: [2.0, 0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [2.0, -0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [2.0, 0, 0.9], color: 0xffffff },
+                        { element: 'H', position: [-2.0, 0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [-2.0, -0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [-2.0, 0, 0.9], color: 0xffffff },
+                        { element: 'H', position: [0, 0.9, 0], color: 0xffffff },
+                        { element: 'H', position: [0, -0.9, 0], color: 0xffffff }
+                    ],
+                    bonds: [[0, 1], [0, 2], [1, 3], [1, 4], [1, 5], [2, 6], [2, 7], [2, 8], [0, 9], [0, 10]],
+                    info: {
+                        formula: 'C₃H₈',
+                        structure: 'Tetrahedral',
+                        angles: '109.5°',
+                        properties: [
+                            'Fuel gas',
+                            'Refrigerant',
+                            'Nonpolar molecule',
+                            'Alkane hydrocarbon',
+                            'Industrial feedstock'
+                        ]
+                    }
+                }
+            };
 
         let scene, camera, renderer, molecule;
         let isRotating = true;
@@ -207,10 +341,15 @@ const MOLECULES = {
 
         function toggleRotation() {
             isRotating = !isRotating;
+            if (isRotating) {
+                document.getElementById('changer').textContent = 'Stop rotation';
+            } else {
+                document.getElementById('changer').textContent = 'Start rotation';
+            }
         }
 
         function resetCamera() {
-            camera.position.set(0, 0, 5);
+            camera.position.set(0, 0, 0);
             camera.lookAt(0, 0, 0);
         }
 
@@ -219,7 +358,7 @@ const MOLECULES = {
             
             if (molecule && isRotating) {
                 molecule.rotation.y += 0.01;
-                molecule.rotation.x += 0.005;
+                molecule.rotation.x += 0.0;
             }
             
             renderer.render(scene, camera);
