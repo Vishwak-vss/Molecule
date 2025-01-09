@@ -357,8 +357,8 @@ const MOLECULES = {
             requestAnimationFrame(animate);
             
             if (molecule && isRotating) {
-                molecule.rotation.y += 0.01;
-                molecule.rotation.x += 0.0;
+                molecule.rotation.y += 0.02;
+                molecule.rotation.x += 0.01;
             }
             
             renderer.render(scene, camera);

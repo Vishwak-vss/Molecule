@@ -67,7 +67,7 @@ select:focus, button:focus {
 
 .content {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: auto;
     
